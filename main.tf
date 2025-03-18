@@ -6,6 +6,9 @@ terraform {
     }
   }
 }
+provider "azurerm" {
+  features {}   # Required "features" block to enable features in the provider
+}
 
 #create resource group
 resource "azurerm_resource_group" "rg" {
